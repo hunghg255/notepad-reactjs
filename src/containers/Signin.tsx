@@ -10,9 +10,7 @@ function Signin() {
   const { reqSignIn } = useSign();
 
   const handleSubmit = (values: any) => {
-    console.log(values);
-
-    // reqSignIn.run({ email, password });
+    reqSignIn.run({ email: values?.email, password: values?.password });
   };
 
   return (
