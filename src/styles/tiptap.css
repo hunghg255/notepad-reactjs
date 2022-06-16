@@ -1,0 +1,44 @@
+.tiptap-container {
+  position: relative;
+  height: 100%;
+  @apply dark:bg-gray-800;
+}
+.tiptap-box {
+  @apply overflow-y-scroll;
+}
+.tiptap-main-content {
+  @apply px-8 pb-8 md:w-[700px] xl:w-[800px] m-auto;
+  height: calc(100vh - 25px - 64px);
+  font-size: 16px; /* base font size */
+}
+
+.fixed-controlbar {
+  @apply px-8 py-4 md:w-[700px] xl:w-[800px] m-auto mr-3.5 lg:mr-auto;
+}
+
+.tiptab-format-actions {
+  @apply flex flex-nowrap py-2 overflow-x-auto justify-center;
+  @apply bg-gray-900 rounded-md;
+}
+
+.tiptap-action-group {
+  @apply flex justify-center px-2;
+}
+
+.character-count {
+  @apply px-2 text-center border-t dark:text-gray-400 border-gray-200 absolute bottom-0 left-0 text-xs bg-gray-50 dark:bg-gray-800 dark:border-gray-900;
+  width: calc(100% - 2px)
+}
+
+.controlbar-container {
+  @apply m-auto;
+}
+
+.control-icon {
+  @apply w-8 h-8 p-2 rounded-md text-gray-600 bg-white border hover:bg-gray-50 dark:border-gray-800 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600;
+}
+
+.controlbar-container .is-active .control-icon,
+.controlbar-container .control-icon.is-active {
+  @apply bg-gray-500 border-gray-500 text-white dark:border-gray-900 dark:bg-gray-900 dark:text-gray-200;
+}
